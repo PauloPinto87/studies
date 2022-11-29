@@ -4,35 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte e pré-formatação</h2>
-    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript.</p>
-    <pre>
-        <code>
-    num = int(input('Digite um número'))
-    if num % 2 == 0:
-        print(f'O número {num} é PAR'.)
-    else:
-        print(f'O número {num} é ÍMPAR.)
-    print('FIM')
-        </code>
-    </pre>
-    <h2>Citações simples.</h2>
-    <p>Como diria o pai de um amigo meu: <q>O computador é um burro muito rápido.</q></p>
-    <h2>Citações completas.</h2>
-    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
-    <blockquote cite="https://books.google.pt/books?id=-Ik_AQAAIAAJ&q=html&dq=html&hl=pt-PT&sa=X&ved=2ahUKEwj2gdj-ytP7AhUoZaQEHYLYAewQ6wF6BAgHEAE">
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1" start="1">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>ligar para o joão depois do café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para o trabalho</li>
+        <li>Ir para a faculdade</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="square" >
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Açucar</li>
+        <li>Alface</li>
+        <li>Frutas</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+            <li>Fortran</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
 
-    A vingança nunca é plena mata a alma e a envenena.
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>Nintendinho</li>
+        <ul>
+            <li>Street Fighter II</li>
+            <li>TopGear</li>
+        </ul>
+        <li>Super Nintendo</li>
+        <ul>
+            <li>Mortal Kombat III</li>
+            <li>Super Mário</li>
+            <ul>
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Level</li>
+            </ul>
+        </ul>
+        <li>PlayStation</li>
+        <ul>
+            <li>Medal of Honor</li>
+            <li>PES</li>
+        </ul>
 
-    </blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language ">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
-    <h2>Texto invertido</h2>
-    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML</bdo></p>
-    
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
 </body>
 </html>
