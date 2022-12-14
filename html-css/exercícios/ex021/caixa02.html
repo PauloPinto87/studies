@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav{
+            background-color: rgb(131, 131, 131);
+            padding: 3px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.582);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.575);
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: gray;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes, Tecnologia e Política</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laboriosam perspiciatis similique, molestiae, eius deserunt, recusandae magni voluptatum tempora illo doloribus ipsum temporibus porro! Voluptates dolorum ipsa error id dicta.
+                </p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Paulo Henrique Pinto</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+
+</body>
+</html>
