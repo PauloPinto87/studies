@@ -1,0 +1,12 @@
+/*var c = 0
+
+do {
+    console.log(c)
+    c++
+    
+} while (c <= 6) 
+*/
+
+for (var c = 0;c < 100000000;c++) {
+    console.log(c)
+}

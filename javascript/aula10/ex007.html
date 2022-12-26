@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+            text-align: center;
+        }
+
+        div#res{
+            margin-top: 30px;
+        }
+
+        input#botao{
+            background-color: rgb(0, 255, 179);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> + 
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()" id="botao">
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar(){
+            var res = window.document.getElementById('res')
+            var n1 = Number(window.document.querySelector('input#txtn1').value)
+            var n2 = Number(window.document.querySelector('input#txtn2').value)            
+            var soma = n1 + n2
+            res.innerHTML = `O resultado da soma de ${n1} mais ${n2} é igual à <strong>${soma}</strong>.`
+        }
+    </script>  
+
+</body>
+</html>

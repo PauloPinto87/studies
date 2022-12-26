@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgb(0, 174, 255);
+            color: rgb(49, 49, 49);
+            font: normal 20pt Arial;
+        }
+
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! O seu nome tem ${nome.length} letras! <br>`)
+        document.write(`O seu nome em letras maiúsculas fica assim: ${nome.toUpperCase()}.<br>`)
+        document.write(`E o seu nome em letras minúsculas fica desse jeito: ${nome.toLowerCase()}.<br>`)
+    </script>    
+</body>
+</html>

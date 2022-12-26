@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Verificação para Nacionalidade.</h1>
+    <input type="text" name="txpaís" id="txpaís">
+    <input type="button" value="Verificar" onclick="verificar()" >
+    <div id="resultado">
+
+    </div>
+    
+    <script>
+        function verificar() {
+            var nasci = window.document.querySelector('input#txpaís')
+            var res = window.document.querySelector('div#resultado')
+
+            res.innerHTML = nasci
+        }
+        
+    </script>
+</body>
+</html>
