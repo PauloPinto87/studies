@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+
+        td.number {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <td scope="col">Estado</td>
+                <td scope="col" style="width: 100px;">População</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">21 168 791</td>
+            </tr>  
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">17 264 943</td>
+            </tr>          
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="number"><strong>84 352 783</strong></td>
+
+        </tfoot>
+
+
+
+
+    </table>
+    
+</body>
+</html>
