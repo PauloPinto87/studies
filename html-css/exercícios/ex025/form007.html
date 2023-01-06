@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <h1>Exemplo de formulários.</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <label for="iestado">Estado: </label>
+        <select name="estado" id="iestado">
+            <option value="" selected>--- Escolha ---</option>
+            <optgroup label="Região Sudeste">
+                <option value="SP" selected>SP</option>
+                <option value="RJ">RJ</option>
+                <option value="MG">MG</option>
+                <option value="ES">ES</option>
+            </optgroup>
+        </select>
+
+        <p>
+            <label for="ilistteam">Lista de times NLF: </label>
+            <input type="text" list="ilistteam" name="ilistteam">
+            <datalist id="ilistteam">
+                <select>
+                    <option value="PHI">Philadelphia Eagles</option>
+                    <option value="NEP">New England Patriot</option>
+                    <option value="NYJ">New York Jets</option>
+                </select>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
