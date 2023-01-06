@@ -21,9 +21,12 @@ Grandes telas: acima de 1200px inclussive
     box-sizing: border-box;
 }
 
-body {
+html {
     width: 100vw;
     height: 100vh;
+}
+
+body {
     background: black url(../imagens/back-phone.jpg) no-repeat center center;
     background-size: cover;
 
@@ -31,11 +34,12 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.692);
-    width: 70%;
+    width: 90vw;
     margin: auto;
+    margin-top: 10px;
     border-radius: 10px;
     padding: 10px;
-    margin-top: 20px;
+
 }
 
 h1 {
