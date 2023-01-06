@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-image: url(../imagens/back-print.jpg); /* em impressão o background-image não funciona */
+}
+
+main {
+    border: 2px solid black;
+}
+
+main h1 {
+    color: black;
+    text-shadow: none;
+}
+
+img#phone {
+    display: none;
+}
+
+img#print {
+    display: block;
+}
+
+img#phone {
+    display: none;
+}
