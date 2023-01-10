@@ -4,36 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando Números</title>
+    <title>Hora do Dia</title>
     <style>
-        body{
-            font: normal 18pt Arial;
+        * {
+            font-family: Arial, Helvetica, sans-serif;
         }
-        input{
-            font: normal 18pt Arial;
-            width: 100px;
+        h1 {
             text-align: center;
+            color: white;
+            padding: 50px;
         }
-        #res{
-            margin-top: 20px;
+        section {
+            background-color: white;
+            border: 1px solid black;
+            width: 500px;
+            height: 350px;
+            text-align: center;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+        }
+
+        section > p {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        section > img {
+            padding-bottom: 10px;
+            border-radius: 600px;
+        }
+
+        footer > p {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.699);
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> + 
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <div id="res">
-        Resultado
-    </div>
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+
+    <section>
+        <p id="ihora">Horas atuais</p>
+        <img src="" alt="" id="iimagem">
+    </section>
+    
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    
     <script>
-        function somar() {
-            var tn1 = Number(document.getElementById('txtn1').value)
-            var tn2 = Number(document.querySelector('input#txtn2').value)
-            var resultado = document.querySelector('div#res')
-            resultado.innerHTML = `A soma entre ${tn1} e ${tn2} é igual a <strong>${tn1 + tn2}</strong>.`
+        var placarHora = document.getElementById('ihora')
+        var dia = new Date()
+        var hora = String(dia.getHours()) + ':' + String(dia.getMinutes())
+        var nomeLocal = ''
+        var img = document.querySelector('#iimagem')
+
+        if (dia.getHours() >= 18 || dia.getHours() < 6) {
+            var nomeLocal = 'noite'
+            var backGround = '#0C1D40'
         }
+        if (dia.getHours() < 12) {
+            var nomeLocal = 'manha'
+            var backGround = '#C0C7A8'
+        }
+        else if (dia.getHours() < 18) {
+            var nomeLocal = 'tarde'
+            var backGround = '#F27272'
+        }
+
+        placarHora.innerHTML = `Agora são ${hora} horas.`
+        document.body.style.backgroundColor = backGround
+        img.setAttribute('src', `imagens/${nomeLocal}.png`)
+
     </script>
 </body>
 </html>
