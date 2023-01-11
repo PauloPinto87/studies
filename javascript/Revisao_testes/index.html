@@ -17,20 +17,18 @@
             <div id="idados">
                 <p>
                     Ano de Nacimento
-                    <input type="number" name="txtano" id="iano" required min="1900" max="2023">
+                    <input type="number" name="txtano" id="iano">
                 </p>
                 <p>
                     Sexo:
-                    <label for="imasc"><input type="radio" name="txtsexo" id="imasc" checked> Masculino</label>
+                    <input type="radio" name="txtsexo" id="imasc" checked> <label for="imasc">Masculino</label>
 
-                    <label for="ifem"><input type="radio" name="txtsexo" id="ifem">
-                    Feminino</label>
-                    
+                    <input type="radio" name="txtsexo" id="ifem">
+                    <label for="ifem">Feminino</label>                    
                 </p>
                 <p>
                     <input type="button" value="Verificar" onclick="verificar()">
-                </p>
-                
+                </p>                
             </div>
             <div id="idiv_result">
                 <p id="iresult">Preencha os dados acima para ver o resultado.</p>
