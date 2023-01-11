@@ -14,8 +14,9 @@ function verificar() {
         sexo = 'feminino'
     }
 
-    if (anoNasci < 1900 || anoNasci > 2023) {
+    if (anoNasci < 1900 || anoNasci > anoAgora) {
         res.innerHTML = `Não foi possível calcular com o ano de nascimento informado, tente novamente!`
+        document.querySelector('#iimagem').src = ``
     }
     else {
         if (idade < 10) {
