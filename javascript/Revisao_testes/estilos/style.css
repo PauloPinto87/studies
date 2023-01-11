@@ -1,0 +1,54 @@
+@charset "UFT-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(0, 140, 255);
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+section {
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: content-box;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+    font-size: large;
+}
+
+section > #idados >p {
+    padding: 20px 10px 5px;
+}
+
+section > #idiv_result {
+    padding-top: 10px;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+input[type=number]{
+    width: 60px;
+}
+
+input[type=button]{
+    width: 80px;
+}
+
+img {
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
