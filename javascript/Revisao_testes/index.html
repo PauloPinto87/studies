@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Idade</title>
+    <title>Contador</title>
     <link rel="stylesheet" href="estilos/style.css">
     
 </head>
 <body>
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Vamos Contar</h1>
     </header>
     <main>
         <section>
-            <div id="idados">
+            <div id="iform">
                 <p>
-                    Ano de Nacimento
-                    <input type="number" name="txtano" id="iano">
+                    <label for="iinicio">Início:</label>
+                    <input type="number" name="txinicio" id="iinicio">
                 </p>
                 <p>
-                    Sexo:
-                    <input type="radio" name="txtsexo" id="imasc" checked> <label for="imasc">Masculino</label>
-
-                    <input type="radio" name="txtsexo" id="ifem">
-                    <label for="ifem">Feminino</label>                    
+                    <label for="ifim">Fim:</label>
+                    <input type="number" name="txtfim" id="ifim">
                 </p>
                 <p>
-                    <input type="button" value="Verificar" onclick="verificar()">
-                </p>                
+                    <label for="ipasso">Passo:</label>
+                    <input type="number" name="txtpasso" id="ipasso">
+                </p>
+                <p>
+                    <input type="button" value="Contar" onclick="contar()">
+                </p>
             </div>
-            <div id="idiv_result">
-                <p id="iresult">Preencha os dados acima para ver o resultado.</p>
-                <img src="#" alt="" id="iimagem">
+            <div id="divresult">
+                <p id="icontando">
+                    Preparando a contagem...
+                </p>
+                <p id="iresult">
+
+                </p>
             </div>
         </section>
     </main>

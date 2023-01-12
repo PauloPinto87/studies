@@ -1,39 +1,30 @@
-function verificar() {
-    var anoNasci = Number(document.querySelector('#iano').value)
-    var agora = new Date()
-    var anoAgora = agora.getFullYear()
-    var idade = anoAgora - anoNasci
+function contar() {
+    var inicio = Number(document.querySelector('#iinicio').value)
+    var fim = Number(document.querySelector('#ifim').value)
+    var passo = Number(document.querySelector('#ipasso').value)
+
+    var contando = document.querySelector('#icontando')
     var res = document.querySelector('#iresult')
-    var sexo = ''
-    var fase = ''
+    
+    res.innerHTML = ''
+    contando.innerHTML = 'Contando:'
 
-    if ((document.querySelector('#imasc').checked)) {
-        sexo = 'masculino'
+    if (inicio == '' || fim == '' || passo == '') {
+        alert('[- ERRO -] - A falta de informações impossibilita a contagem, verifique os campo e tente novamente!')
     }
     else {
-        sexo = 'feminino'
-    }
-
-    if (anoNasci < 1900 || anoNasci > anoAgora) {
-        res.innerHTML = `Não foi possível calcular com o ano de nascimento informado, tente novamente!`
-        document.querySelector('#iimagem').src = ``
-    }
-    else {
-        if (idade < 10) {
-            fase = 'bebe'
-        }
-        else if (idade < 18) {
-            fase = 'jovem'
-        }
-        else if ( idade < 50) {
-            fase = 'adulto'
+        if (inicio < fim){
+            for ( inicio ; inicio <= fim ; inicio += passo ) {
+                res.innerHTML += ` ${inicio} &#128073 `
+            }
+        
         }
         else {
-            fase = 'idoso'
+            for ( inicio ; inicio >= fim ; inicio -= passo )
+                res.innerHTML += ` ${inicio} &#128073 `  
         }
-            
-        res.innerHTML = `Detectamos uma pessoa do sexo ${sexo} que completa ${idade} anos em ${anoAgora}.`
-    
-        document.querySelector('#iimagem').src = `imagens/foto-${fase}-${sexo}.png`
+        res.innerHTML += ` &#127937`
     }
+
+
 }
