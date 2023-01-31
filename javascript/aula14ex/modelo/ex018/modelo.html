@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Analisador de Números</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Analisador de Números</h1>
     </header>
     <section>
         <div>
-            Testando.
+            <label for="inum">Número (entre 0 e 100): </label>
+            <input type="number" name="num" id="inum">
+            <button onclick="principal()">Adicionar</button>
         </div>
-        <div>
-            Olá
+        <div >
+            <select name="" id="ipainel" size="auto"></select>
+            <button onclick="analisar()">Analisar</button>
         </div>
+        <div >
+            <p id="resultado">
+
+            </p>
+        </div>
+        <div id="btnreset">
+            <button onclick="reset()">Reset</button>
+        </div>
+        
     </section>
     <footer>
         <p>&copy; CursoemVideo</p>
